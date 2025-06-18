@@ -23,7 +23,7 @@ public class AlunoRepositoryTest {
     private AlunoRepository alunoRepository;
 
     @Test
-    public void QuantAlunosAtivos() {
+    public void quantAlunosAtivos() {
         Aluno aluno1 = new Aluno();
         aluno1.setId(1L);
         aluno1.setNome("Jose Mateus");
@@ -46,7 +46,7 @@ public class AlunoRepositoryTest {
     }
 
     @Test
-    public void QuantAlunosInativos() {
+    public void quantAlunosInativos() {
 
         Aluno aluno_inativo = new Aluno();
         aluno_inativo.setId(111L);
@@ -62,7 +62,7 @@ public class AlunoRepositoryTest {
     }
 
     @Test
-    public void AlunoComNomePequeno() {
+    public void alunoComNomePequeno() {
 
         Aluno aluno = new Aluno();
         aluno.setId(1L);
@@ -78,7 +78,7 @@ public class AlunoRepositoryTest {
     }
 
     @Test
-    public void ProcurarAlunosComMesmoNome() {
+    public void procurarAlunosComMesmoNome() {
 
         Aluno aluno = new Aluno();
         aluno.setId(12L);
@@ -103,7 +103,7 @@ public class AlunoRepositoryTest {
     }
 
     @Test
-    public void SalvarAlunosSemMatricula() {
+    public void salvarAlunosSemMatricula() {
 
         Aluno aluno = new Aluno();
         aluno.setId(5L);
