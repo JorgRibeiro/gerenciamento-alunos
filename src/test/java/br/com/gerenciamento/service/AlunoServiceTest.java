@@ -37,8 +37,10 @@ public class AlunoServiceTest {
 
     @Test
     public void salvarSemNome() {
+        // Esse Teste parou de funcionar de um commit para o outro
+        // Entao comentei a linha de setar o ID, pois o sistema faz isso, e entao ele volotu a funcionar
         Aluno aluno = new Aluno();
-        aluno.setId(1L);
+   //     aluno.setId(1L);
         aluno.setTurno(Turno.NOTURNO);
         aluno.setCurso(Curso.ADMINISTRACAO);
         aluno.setStatus(Status.ATIVO);
@@ -58,7 +60,7 @@ public class AlunoServiceTest {
         aluno.setMatricula("123333");
         this.serviceAluno.save(aluno);
 
-        Long AlunoID = aluno.getId();       // O id é gerado automativamente pelo servoce, então não precisamos setar apenas pegar o valor gerado
+        Long AlunoID = aluno.getId();       // O id é gerado automativamente pelo servico, então nãao precisamos setar apenas pegar o valor gerado
 
         Aluno alunoRetorno = this.serviceAluno.getById(AlunoID);
         Assert.assertTrue(alunoRetorno.getStatus().equals(Status.ATIVO));

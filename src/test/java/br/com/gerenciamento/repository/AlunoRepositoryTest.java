@@ -25,7 +25,7 @@ public class AlunoRepositoryTest {
     @Test
     public void quantAlunosAtivos() {
         Aluno aluno1 = new Aluno();
-        aluno1.setId(1L);
+  //    aluno1.setId(1L);
         aluno1.setNome("Jose Mateus");
         aluno1.setTurno(Turno.NOTURNO);
         aluno1.setCurso(Curso.ADMINISTRACAO);
@@ -34,7 +34,7 @@ public class AlunoRepositoryTest {
         this.alunoRepository.save(aluno1);
 
         Aluno aluno2 = new Aluno();
-        aluno2.setId(2L);
+   //   aluno2.setId(2L);
         aluno2.setNome("Vinicius");
         aluno2.setTurno(Turno.MATUTINO);
         aluno2.setCurso(Curso.BIOMEDICINA);
@@ -49,7 +49,7 @@ public class AlunoRepositoryTest {
     public void quantAlunosInativos() {
 
         Aluno aluno_inativo = new Aluno();
-        aluno_inativo.setId(111L);
+    //  aluno_inativo.setId(111L);
         aluno_inativo.setNome("Ribeiro");
         aluno_inativo.setTurno(Turno.MATUTINO);
         aluno_inativo.setCurso(Curso.DIREITO);
@@ -65,7 +65,7 @@ public class AlunoRepositoryTest {
     public void alunoComNomePequeno() {
 
         Aluno aluno = new Aluno();
-        aluno.setId(1L);
+    //    aluno.setId(1L);
         aluno.setNome("Alan");
         aluno.setTurno(Turno.NOTURNO);
         aluno.setCurso(Curso.ADMINISTRACAO);
@@ -81,7 +81,7 @@ public class AlunoRepositoryTest {
     public void procurarAlunosComMesmoNome() {
 
         Aluno aluno = new Aluno();
-        aluno.setId(12L);
+    //    aluno.setId(12L);
         aluno.setNome("Americo Luis");
         aluno.setTurno(Turno.NOTURNO);
         aluno.setCurso(Curso.INFORMATICA);
@@ -90,7 +90,7 @@ public class AlunoRepositoryTest {
         this.alunoRepository.save(aluno);
 
         Aluno aluno1 = new Aluno();
-        aluno1.setId(13L);
+    //   aluno1.setId(13L);
         aluno1.setNome("Americo Jose");
         aluno1.setTurno(Turno.NOTURNO);
         aluno1.setCurso(Curso.INFORMATICA);
@@ -106,7 +106,7 @@ public class AlunoRepositoryTest {
     public void salvarAlunosSemMatricula() {
 
         Aluno aluno = new Aluno();
-        aluno.setId(5L);
+    //  aluno.setId(5L);
         aluno.setNome("Jorge");
         aluno.setTurno(Turno.NOTURNO);
         aluno.setCurso(Curso.INFORMATICA);
