@@ -1,11 +1,6 @@
 package br.com.gerenciamento.service;
 
-import br.com.gerenciamento.enums.Curso;
-import br.com.gerenciamento.enums.Status;
-import br.com.gerenciamento.enums.Turno;
-import br.com.gerenciamento.model.Aluno;
 import br.com.gerenciamento.model.Usuario;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,7 +69,5 @@ public class UsuarioServiceTest {
         });
 
     }
-
-
 
 }

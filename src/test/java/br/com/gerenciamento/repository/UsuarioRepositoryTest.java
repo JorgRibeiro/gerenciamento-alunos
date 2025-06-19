@@ -1,11 +1,6 @@
 package br.com.gerenciamento.repository;
 
-import br.com.gerenciamento.enums.Curso;
-import br.com.gerenciamento.enums.Status;
-import br.com.gerenciamento.enums.Turno;
-import br.com.gerenciamento.model.Aluno;
 import br.com.gerenciamento.model.Usuario;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,8 +46,6 @@ public class UsuarioRepositoryTest {
         assertEquals(usuario.getUser(), usuarioPorEmail.getUser());
     }
 
-
-
     @Test
     public void buscarUsuario() {
 
@@ -77,5 +70,4 @@ public class UsuarioRepositoryTest {
         assertNull(usuario);
 
     }
-
 }
